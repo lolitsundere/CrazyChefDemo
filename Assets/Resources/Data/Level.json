@@ -1,0 +1,24 @@
+﻿[
+  {
+    "ID": "1",
+    "ShopID": "1",
+    "WantedFood": "1301,1302,1303,1304,1305,1306",
+    "OneFoodProbability": "30",
+    "TwoFoodProbability": "40",
+    "ThreeFoodProbability": "30",
+    "MaximumCustomerWaiting": "3",
+    "HasTimeLimit": "FALSE",
+    "MaximumCustomer": "12",
+    "TimeLimit": "0",
+    "AverageCustomerComeTime": "0",
+    "OneFoodMaximumCustomerWaitingTime": "15",
+    "TwoFoodMaximumCustomerWaitingTime": "20",
+    "ThreeFoodMaximumCustomerWaitingTime": "25",
+    "TargetGold": "200",
+    "UseComboGoldAsTargetGold": "FALSE",
+    "BurntFail": "TRUE",
+    "BurntFailCount": "2",
+    "CustomerLeaveFail": "TRUE",
+    "CustomerLeaveFailCount": "2"
+  }
+]

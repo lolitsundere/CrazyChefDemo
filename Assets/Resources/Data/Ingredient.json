@@ -1,0 +1,74 @@
+﻿[
+  {
+    "ID": "1001",
+    "Name_CN": "甜甜圈面团",
+    "OneStarSellGold": "3",
+    "TwoStarSellGold": "5",
+    "ThreeStarSellGold": "7",
+    "OneStarUpgradeGold": "300",
+    "TwoStarUpgradeGold": "500",
+    "ThreeStarUpgradeGold": "700",
+    "IsAuto": "False",
+    "TargetID": "1101"
+  },
+  {
+    "ID": "1002",
+    "Name_CN": "奶昔",
+    "OneStarSellGold": "6",
+    "TwoStarSellGold": "8",
+    "ThreeStarSellGold": "10",
+    "OneStarUpgradeGold": "300",
+    "TwoStarUpgradeGold": "500",
+    "ThreeStarUpgradeGold": "700",
+    "IsAuto": "True",
+    "TargetID": "1102"
+  },
+  {
+    "ID": "1003",
+    "Name_CN": "草莓糖浆",
+    "OneStarSellGold": "1",
+    "TwoStarSellGold": "3",
+    "ThreeStarSellGold": "5",
+    "OneStarUpgradeGold": "300",
+    "TwoStarUpgradeGold": "500",
+    "ThreeStarUpgradeGold": "700",
+    "IsAuto": "False",
+    "TargetID": "1201"
+  },
+  {
+    "ID": "1004",
+    "Name_CN": "巧克力糖浆",
+    "OneStarSellGold": "1",
+    "TwoStarSellGold": "3",
+    "ThreeStarSellGold": "5",
+    "OneStarUpgradeGold": "300",
+    "TwoStarUpgradeGold": "500",
+    "ThreeStarUpgradeGold": "700",
+    "IsAuto": "False",
+    "TargetID": "1201"
+  },
+  {
+    "ID": "1005",
+    "Name_CN": "椰子片",
+    "OneStarSellGold": "2",
+    "TwoStarSellGold": "4",
+    "ThreeStarSellGold": "6",
+    "OneStarUpgradeGold": "300",
+    "TwoStarUpgradeGold": "500",
+    "ThreeStarUpgradeGold": "700",
+    "IsAuto": "False",
+    "TargetID": "1201"
+  },
+  {
+    "ID": "1006",
+    "Name_CN": "糖粒",
+    "OneStarSellGold": "2",
+    "TwoStarSellGold": "4",
+    "ThreeStarSellGold": "6",
+    "OneStarUpgradeGold": "300",
+    "TwoStarUpgradeGold": "500",
+    "ThreeStarUpgradeGold": "700",
+    "IsAuto": "False",
+    "TargetID": "1201"
+  }
+]

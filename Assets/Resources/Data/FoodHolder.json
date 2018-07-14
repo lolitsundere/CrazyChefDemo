@@ -1,0 +1,26 @@
+﻿[
+  {
+    "ID": "1201",
+    "Name_CN": "甜甜圈盒子",
+    "OneStarFoodCount": "1",
+    "TwoStarFoodCount": "2",
+    "ThreeStarFoodCount": "4",
+    "OneStarUpgradeGold": "300",
+    "TwoStarUpgradeGold": "500",
+    "ThreeStarUpgradeGold": "700",
+    "UpdateWithOther": "False",
+    "UpdateWithID": "0"
+  },
+  {
+    "ID": "1202",
+    "Name_CN": "奶昔杯",
+    "OneStarFoodCount": "1",
+    "TwoStarFoodCount": "2",
+    "ThreeStarFoodCount": "3",
+    "OneStarUpgradeGold": "0",
+    "TwoStarUpgradeGold": "0",
+    "ThreeStarUpgradeGold": "0",
+    "UpdateWithOther": "True",
+    "UpdateWithID": "1102"
+  }
+]
