@@ -17,7 +17,8 @@ public class CookGameController: MonoBehaviour
     private Dictionary<int, List<GameObject>> FoodHolderDic;
 
     private System.Random rdm = new System.Random();
-    
+    private List<double> customerComingTimeList;
+    private List<GameObject> customerList;
 
     private void Start()
     {
@@ -30,6 +31,7 @@ public class CookGameController: MonoBehaviour
         NonAutoIngredientDic = new Dictionary<int, GameObject>();
         FoodMakerDic = new Dictionary<int, List<GameObject>>();
         FoodHolderDic = new Dictionary<int, List<GameObject>>();
+        customerList = new List<GameObject>();
 
         level = GameDictionary.Instance.GetLevel(LevelID);
         shop = GameDictionary.Instance.GetShop(level.ShopID);
@@ -240,6 +242,17 @@ public class CookGameController: MonoBehaviour
                 fh.GetComponent<Button>().onClick.AddListener(() => FoodHolderClick(item.Key, fh));
             }
         }
+
+        customerComingTimeList = new List<double>();
+        for (int i = 0; i < level.MaximumCustomerWaiting; i++)
+        {
+            customerComingTimeList.Add(rdm.NextDouble()*2*level.AverageCustomerComeTime);
+        }
+    }
+
+    private void CreateCustomer()
+    {
+
     }
 
     private void IngredientClick(int id)
@@ -393,7 +406,21 @@ public class CookGameController: MonoBehaviour
             }
         }
 
+        customerComingTimeList = customerComingTimeList.Select(d => d - Time.deltaTime).ToList();
+        List<double> tempList = customerComingTimeList.Where(d => d < 0).Select(d => d).ToList();
+        customerComingTimeList = customerComingTimeList.Except(tempList).ToList();
+        for (int i = 0; i < tempList.Count; i++)
+        {
+            CreateCustomer();
+        }
+        
+        while ((customerList.Count + customerComingTimeList.Count) < level.MaximumCustomerWaiting)
+        {
+            customerComingTimeList.Add(rdm.NextDouble() * 2 * level.AverageCustomerComeTime);
+        }
+
         ///Test时使用
+        ///
         if (true)
         {
             foreach (var item in FoodMakerDic)

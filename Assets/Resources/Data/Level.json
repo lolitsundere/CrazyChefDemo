@@ -10,7 +10,7 @@
     "HasTimeLimit": "FALSE",
     "MaximumCustomer": "12",
     "TimeLimit": "0",
-    "AverageCustomerComeTime": "0",
+    "AverageCustomerComeTime": "10",
     "OneFoodMaximumCustomerWaitingTime": "15",
     "TwoFoodMaximumCustomerWaitingTime": "20",
     "ThreeFoodMaximumCustomerWaitingTime": "25",
